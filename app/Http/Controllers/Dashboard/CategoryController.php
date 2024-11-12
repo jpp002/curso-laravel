@@ -13,7 +13,6 @@ class CategoryController extends Controller
 {
     public function index()//: Response
     {
-
         $categories = Category::paginate(2);
         return view('dashboard.category.index', compact('categories'));
 
